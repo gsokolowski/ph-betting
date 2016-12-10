@@ -6,6 +6,7 @@ error_reporting(E_ALL);
 define('BASE_PATH', dirname(__DIR__));
 define('APP_PATH', BASE_PATH . '/app');
 
+
 try {
 
     /**
@@ -13,6 +14,7 @@ try {
      * the services that provide a full stack framework.
      */
     $di = new FactoryDefault();
+
 
     /**
      * Read services
@@ -24,10 +26,14 @@ try {
      */
     $config = $di->getConfig();
 
+//    var_dump($di->getDb());
+//    var_dump($di->getFlash());
+
     /**
      * Include Autoloader
      */
     include APP_PATH . '/config/loader.php';
+
 
     /**
      * Handle the request

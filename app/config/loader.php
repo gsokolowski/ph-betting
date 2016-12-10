@@ -1,6 +1,10 @@
 <?php
 
-$loader = new \Phalcon\Loader();
+use Phalcon\Loader;
+
+require BASE_PATH.'/vendor/autoload.php';
+
+$loader = new Loader();
 
 /**
  * We're a registering a set of directories taken from the configuration file
@@ -8,6 +12,9 @@ $loader = new \Phalcon\Loader();
 $loader->registerDirs(
     [
         $config->application->controllersDir,
-        $config->application->modelsDir
+        $config->application->modelsDir,
     ]
-)->register();
+);
+
+$loader->register();
+
