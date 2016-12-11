@@ -1,10 +1,11 @@
 <?php
 
+
 use GuzzleHttp as GuzzleHttp;
 
 use Reader\WilliamXml;
 
-class IndexController extends ControllerBase
+class WilliamHillController extends \Phalcon\Mvc\Controller
 {
 
     public function indexAction()
@@ -27,13 +28,12 @@ class IndexController extends ControllerBase
 
 
 
-
-
-
-
         /* Teraz juz masz dzialajace interfacy i wszystko wiec
-        zrob ten xml parsing i wepnij wszystko do modelu phalconowego i wysli do db.
-        Zrob jakies male cos na start wepnij do modeu i zapisz a pozniej zrobisz reszte
+        zrob ten xml parsing i wepelij wszystko do modelu phalconowego i wysli do db.
+
+        zaloz tabele albo kilka tabel w db
+
+        Zrob jakies male cos na start wepnij do modelu i zapisz a pozniej zrobisz reszte
 
         Zrob tez cos z jsonem tak zeby json mzna tam wpinac rozniez - pomysl on nazwenictwie na koniec
         Zamiast Reader nazwij to moze ApiReader
@@ -47,11 +47,11 @@ class IndexController extends ControllerBase
         $postId2 = 'Dupa';
 
         $data = array(
-                    1    => "a",
-                    2  => "b",
-                    3  => "c",
-                    5 => "d",
-                );
+            1    => "a",
+            2  => "b",
+            3  => "c",
+            5 => "d",
+        );
 
         $this->view->postId = $postId;
         $this->view->data = $data;
@@ -59,6 +59,7 @@ class IndexController extends ControllerBase
 
 
     }
+
 
 }
 
