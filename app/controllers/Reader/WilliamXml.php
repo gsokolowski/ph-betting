@@ -74,20 +74,16 @@ class WilliamXml extends ThirdParty {
         $typeAtributes = $responseXml->response->williamhill->class->type[0]->attributes();
         $markerAtributes = $responseXml->response->williamhill->class->type[0]->market[0]->attributes();
 
-        var_dump($typeAtributes);
+        print_r($typeAtributes);
 
         echo '<br/><br/><br/>';
 
-        var_dump($markerAtributes);
+        print_r($markerAtributes);
         echo '<br/><br/><br/>';
-
-
-
 
 
         foreach($responseXml->xpath("response/williamhill/class/type/market/participant") as $item) {
             print_r($item);
-            break;
 
         }
 
@@ -99,12 +95,12 @@ class WilliamXml extends ThirdParty {
 
         //print_r($result);
 
-        foreach($responseXml->xpath("response/williamhill/class") as $item) {
-            $arr = $item->attributes();
-            var_dump($arr);
-            break;
-
-        }
+//        foreach($responseXml->xpath("response/williamhill/class") as $item) {
+//            $arr = $item->attributes();
+//            var_dump($arr);
+//            break;
+//
+//        }
 
 
 
