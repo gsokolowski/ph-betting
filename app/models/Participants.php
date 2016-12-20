@@ -21,17 +21,17 @@ class Participants extends \Phalcon\Mvc\Model
 
     /**
      *
-     * @var string
-     * @Column(type="string", length=255, nullable=true)
-     */
-    public $name;
-
-    /**
-     *
      * @var integer
      * @Column(type="integer", length=11, nullable=true)
      */
     public $fr_id;
+
+    /**
+     *
+     * @var string
+     * @Column(type="string", length=255, nullable=true)
+     */
+    public $name;
 
     /**
      *

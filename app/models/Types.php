@@ -1,6 +1,6 @@
 <?php
 
-class Categories extends \Phalcon\Mvc\Model
+class Types extends \Phalcon\Mvc\Model
 {
 
     /**
@@ -17,42 +17,42 @@ class Categories extends \Phalcon\Mvc\Model
      * @var integer
      * @Column(type="integer", length=11, nullable=true)
      */
-    public $fr_id;
-
-    /**
-     *
-     * @var string
-     * @Column(type="string", length=100, nullable=true)
-     */
-    public $type;
-
-    /**
-     *
-     * @var string
-     * @Column(type="string", length=100, nullable=true)
-     */
-    public $name;
+    public $category_id;
 
     /**
      *
      * @var integer
      * @Column(type="integer", length=11, nullable=true)
      */
-    public $parent_id;
+    public $fr_id;
+
+    /**
+     *
+     * @var string
+     * @Column(type="string", length=255, nullable=true)
+     */
+    public $name;
+
+    /**
+     *
+     * @var string
+     * @Column(type="string", length=255, nullable=true)
+     */
+    public $url;
 
     /**
      *
      * @var string
      * @Column(type="string", nullable=true)
      */
-    public $maxRepDate;
+    public $lastUpdateDate;
 
     /**
      *
      * @var string
      * @Column(type="string", nullable=true)
      */
-    public $maxRepTime;
+    public $lastUpdateTime;
 
     /**
      * Returns table name mapped in the model.
@@ -61,14 +61,14 @@ class Categories extends \Phalcon\Mvc\Model
      */
     public function getSource()
     {
-        return 'categories';
+        return 'types';
     }
 
     /**
      * Allows to query a set of records that match the specified conditions
      *
      * @param mixed $parameters
-     * @return Categories[]
+     * @return Types[]
      */
     public static function find($parameters = null)
     {
@@ -79,7 +79,7 @@ class Categories extends \Phalcon\Mvc\Model
      * Allows to query the first record that match the specified conditions
      *
      * @param mixed $parameters
-     * @return Categories
+     * @return Types
      */
     public static function findFirst($parameters = null)
     {
