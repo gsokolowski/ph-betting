@@ -41,10 +41,10 @@ and participants to store participants
 
 All these tables are in relation
 
-The rest - just have a look into the code
+Code is here:
 controllers/Reader/
 ThirdPartyInterface.php
 Base.php  - base class for extension in concread classes like Xml.php
 Xml.php - concread class
-Json.php - just a suggestion how this concread class could be implemented for data received from json response
+Json.php - just a suggestion how this concread class could be implemented for data received from json response   
 
