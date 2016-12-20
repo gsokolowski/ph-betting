@@ -1,10 +1,10 @@
 <?php
 namespace Reader;
-use Reader\ThirdParty as ThirdParty;
+use Reader\Base as Base;
 
 
 // concrete class
-class Json extends ThirdParty {
+class Json extends Base {
 
 
     private $client;
