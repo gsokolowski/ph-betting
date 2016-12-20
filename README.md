@@ -10,7 +10,7 @@ How to install
 2. cd ph-betting
 3. composer install to install dependencies
 4. create new mysql database called ph-betting
-5. use phusing phalcon migration to create tables
+5. use phalcon migration to create tables
 phalcon migration run
 or
 you can call script sql script which is located in
@@ -33,10 +33,10 @@ https://github.com/gsokolowski/ph-betting
 Any technical decision or assumptions taken should also be documented
 
 Used phalcon and guzzlehttp as suggested
-Decided to have for tables to caumulate data
-categories to keep root category WilliamHill and classess
+Decided to have for tables to store data
+categories to keep root category WilliamHill and classes
 types to store types
-marets to store markets
+markets to store markets
 and participants to store participants
 
 All these tables are in relation
@@ -44,7 +44,7 @@ All these tables are in relation
 Code is here:
 controllers/Reader/
 ThirdPartyInterface.php
-Base.php  - base class for extension in concread classes like Xml.php
-Xml.php - concread class
-Json.php - just a suggestion how this concread class could be implemented for data received from json response   
+Base.php  - base class for extension in concrete classes like Xml.php
+Xml.php - concrete class
+Json.php - just a suggestion how this concrete class could be implemented for data received from json response
 
